@@ -23,17 +23,19 @@ h1{
 .header{
   text-align: center;
   background-color: var(--secondary-color);
-  padding: 5px;
+  padding: 5px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 70px;
+  margin: auto;
+  gap: 2%;
 }
 
 .header img{
   max-width: 60px;
   text-align: center;
-  margin: 0 3% 0 3%;
+  margin: 0 0 0 0;
 }
 
 .nav-item{
