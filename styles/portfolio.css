@@ -186,6 +186,7 @@ footer {
   text-align: center;
   line-height: 1.6;
   display: flex;
+  font-size: 90%;
 }
 
 footer #lastModified {
@@ -195,7 +196,7 @@ footer #lastModified {
 .footer{
   display: block;
   margin: auto;
-  max-width: 400px;
+  max-width: 80%;
 }
 
 @media(max-width:760px){ 
