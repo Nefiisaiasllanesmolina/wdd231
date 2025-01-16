@@ -187,11 +187,11 @@ footer {
   text-align: center;
   line-height: 1.6;
   display: flex;
+  font-weight: bold;
 }
 
 footer #lastModified {
   color: white;
-  font-weight: bold;
 }
 
 .footer{
