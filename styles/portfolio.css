@@ -196,8 +196,6 @@ footer #lastModified {
 .footer{
   display: block;
   margin: auto;
-  max-width: 80%;
-  min-width: 70%
 }
 
 @media(max-width:760px){ 
