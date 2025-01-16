@@ -171,6 +171,7 @@ input[type ="button"]{
   background-color: var(--secondary-color);
   border: none;
   color: white;
+  font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
 }
@@ -190,6 +191,7 @@ footer {
 
 footer #lastModified {
   color: white;
+  font-weight: bold;
 }
 
 .footer{
