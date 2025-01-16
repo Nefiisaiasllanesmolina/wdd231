@@ -135,7 +135,7 @@ section h2{
   margin-top: 2rem;
 }
 
-.cardtwofigure{
+.cardtwo figure{
   max-width: 800px;
   min-width: 50px;
   margin: auto;
@@ -189,7 +189,7 @@ footer {
 }
 
 footer #lastModified {
-  color: yellow;
+  color: white;
 }
 
 .footer{
@@ -231,7 +231,7 @@ footer #lastModified {
   .nav-menu{
     position: absolute;
     left: -100%;
-    top: 11%;
+    top: 70px;
     gap: 0;
     flex-direction: column;
     background-color: #262626;
@@ -272,10 +272,6 @@ footer #lastModified {
 
   .buttons{
     display: block;
-  }
-
-  footer #lastModified {
-    color: yellow;
   }
 }
 
