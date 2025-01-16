@@ -1,6 +1,6 @@
 :root {
   --primary-color: #031D44;
-  --secondary-color: #0076B6;
+  --secondary-color: #0050a3;
   --third-color: #70A288;
   --fourth-color: #DAB785;
   --fifth-color: #D5896F;
@@ -187,7 +187,6 @@ footer {
   text-align: center;
   line-height: 1.6;
   display: flex;
-  font-weight: bold;
 }
 
 footer #lastModified {
