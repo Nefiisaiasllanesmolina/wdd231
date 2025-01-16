@@ -185,10 +185,17 @@ footer {
   padding: 1rem;
   text-align: center;
   line-height: 1.6;
+  display: flex;
 }
 
 footer #lastModified {
   color: yellow;
+}
+
+.footer{
+  display: block;
+  margin: auto;
+  max-width: 400px;
 }
 
 @media(max-width:760px){ 
