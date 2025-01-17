@@ -99,3 +99,93 @@ const courses = [
       completed: false
   }
 ]
+/*
+createTempleCard(temples);
+*/
+createCourseCard(courses);
+/*
+const oldLink = document.querySelector("#old");
+const newLink = document.querySelector("#new");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
+*/
+const wdd = document.querySelector("#wdd");
+const cse = document.querySelector("#cse");
+/*
+  oldLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.dedicated.includes("19")));
+  });
+
+  newLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.dedicated.includes("20")));
+  });
+
+  largeLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => (temple.area > 90000)));
+  });
+
+  smallLink.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => (temple.area < 10000)));
+  });
+  */
+wdd.addEventListener("click", () => {
+  createCourseCard(courses.filter(course => course.subject.includes("WDD")));
+});
+
+cse.addEventListener("click", () => {
+  createCourseCard(courses.filter(course => course.subject.includes("CSE")));
+});
+
+  /*
+  function createTempleCard(filteredTemples) {
+    document.querySelector(".container").innerHTML = "";
+    filteredTemples.forEach(temple => {
+      let card = document.createElement("section");
+      let name = document.createElement("h3");
+      let location = document.createElement("p");
+      let dedication = document.createElement("p");
+      let area = document.createElement("p");
+      let img = document.createElement("img");
+
+      name.textContent = temple.templeName;
+      location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+      dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+      area.innerHTML = `<span class="label">Area:</span> ${temple.area} sq ft`;
+      img.setAttribute("src", temple.imageUrl);
+      img.setAttribute("alt", `${temple.templeName} Temple` );
+      img.setAttribute("loading", "lazy");
+
+      card.appendChild(name);
+      card.appendChild(location);
+      card.appendChild(dedication);
+      card.appendChild(area);
+      card.appendChild(img);
+
+      document.querySelector(".container").appendChild(card);
+    });
+  }
+*/
+
+function createCourseCard(filteredCourses) {
+  document.querySelector(".container").innerHTML = "";
+  filteredCourses.forEach(course => {
+    let card = document.createElement("section");
+    let name = document.createElement("h3");
+    let complete = document.createElement("p");
+
+    name.textContent = course.number;
+    complete.innerHTML = course.subject;
+
+    card.appendChild(name);
+    card.appendChild(complete);
+
+    document.querySelector(".container").appendChild(card);
+  });
+}  
+
+/*
+var images = temples.map(function(element){
+  return '<li>'+element.templeName+' '+element.location+' '+element.dedicated+' '+element.size+element.imageUrl+'</li>'
+})
+document.getElementById("templesImages").innerHTML = images;
+*/
