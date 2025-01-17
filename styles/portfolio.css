@@ -163,8 +163,8 @@ section h2{
   margin: 1rem 0;
 }
 
-input[type ="button"]{
-  width: 90%;
+input[type ="button"], .container button{
+  width: 100%;
   margin: 0 1rem 1rem 1rem;
   padding: .4rem;
   font-size: 18px;
@@ -178,6 +178,10 @@ input[type ="button"]{
 
 input[type ="button"]:hover{
   background-color: var(--primary-color);
+}
+
+.container button{
+  background-color: var(--third-color);
 }
 
 footer {

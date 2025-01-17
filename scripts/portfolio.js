@@ -175,7 +175,7 @@ function createCourseCard(filteredCourses) {
   document.querySelector(".container").innerHTML = "";
   filteredCourses.forEach(course => {
     let card = document.createElement("button");
-    let name = document.createElement("h3");
+    let name = document.createElement("p");
     let complete = document.createElement("p");
 
     name.textContent = course.number;
