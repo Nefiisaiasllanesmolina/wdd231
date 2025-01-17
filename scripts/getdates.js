@@ -109,6 +109,7 @@ const newLink = document.querySelector("#new");
 const largeLink = document.querySelector("#large");
 const smallLink = document.querySelector("#small");
 */
+const all = document.querySelector("#all");
 const wdd = document.querySelector("#wdd");
 const cse = document.querySelector("#cse");
 /*
@@ -128,6 +129,10 @@ const cse = document.querySelector("#cse");
     createTempleCard(temples.filter(temple => (temple.area < 10000)));
   });
   */
+all.addEventListener("click", () => {
+  createCourseCard(courses.filter(course => course.certificate.includes("Web")));
+});
+
 wdd.addEventListener("click", () => {
   createCourseCard(courses.filter(course => course.subject.includes("WDD")));
 });
@@ -169,7 +174,7 @@ cse.addEventListener("click", () => {
 function createCourseCard(filteredCourses) {
   document.querySelector(".container").innerHTML = "";
   filteredCourses.forEach(course => {
-    let card = document.createElement("section");
+    let card = document.createElement("button");
     let name = document.createElement("h3");
     let complete = document.createElement("p");
 
