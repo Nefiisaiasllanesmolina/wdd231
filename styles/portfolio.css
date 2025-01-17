@@ -178,15 +178,11 @@ input[type ="button"], .container button{
 }
 
 input[type ="button"]:hover{
-  background-color: var(--primary-color);
+  background-color: black;
 }
 
 .container button{
-  background-color: var(--third-color);
-}
-
-.container button:hover{
-  background-color: var(--fourth-color);
+  background-color: var(--primary-color);
 }
 
 footer {
