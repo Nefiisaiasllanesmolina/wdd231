@@ -176,13 +176,10 @@ function createCourseCard(filteredCourses) {
   filteredCourses.forEach(course => {
     let card = document.createElement("button");
     let name = document.createElement("p");
-    let complete = document.createElement("p");
 
-    name.textContent = course.number;
-    complete.innerHTML = course.subject;
+    name.innerHTML = `${course.number} ${course.subject}`;
 
     card.appendChild(name);
-    card.appendChild(complete);
 
     document.querySelector(".container").appendChild(card);
   });

@@ -184,6 +184,10 @@ input[type ="button"]:hover{
   background-color: var(--third-color);
 }
 
+.container button:hover{
+  background-color: var(--fourth-color);
+}
+
 footer {
   background-color: var(--secondary-color);
   color: white;
