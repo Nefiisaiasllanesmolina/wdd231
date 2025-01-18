@@ -154,8 +154,11 @@ section h2{
 .container {
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-  grid-gap: 25px;
   place-items: center;
+}
+
+.credits{
+  margin-bottom: 1rem;
 }
 
 .buttons{

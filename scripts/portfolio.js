@@ -191,3 +191,20 @@ var images = temples.map(function(element){
 })
 document.getElementById("templesImages").innerHTML = images;
 */
+
+const currentcredits = document.querySelector("#currentcredits");
+
+const credits = 12;
+
+currentcredits.innerHTML = `The total number of credits show is: <span>${credits}</span>`;
+
+/*
+const currentyear = document.querySelector("#currentyear");
+const lastModified = document.querySelector("#lastModified");
+
+const today = new Date();
+const year = today.getFullYear();
+
+currentyear.innerHTML = year;
+lastModified.innerHTML = `Last Modification: <span>${document.lastModified}</span>`;
+*/
