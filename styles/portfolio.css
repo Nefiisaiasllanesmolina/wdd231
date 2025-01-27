@@ -167,7 +167,7 @@ section h2{
   border-bottom: 2px solid black;
 }
 
-input[type ="button"], .container button{
+input[type ="button"]{
   width: 90%;
   margin: 0 1rem 1rem 1rem;
   padding: .4rem;
@@ -184,8 +184,21 @@ input[type ="button"]:hover{
   background-color: black;
 }
 
-.container button{
+.container div{
   background-color: var(--primary-color);
+  width: 90%;
+  margin: 0 1rem 1rem 1rem;
+  padding: .4rem;
+  font-size: 18px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .not-completed{
+  background-color: var(--secondary-color);
 }
 
 footer {

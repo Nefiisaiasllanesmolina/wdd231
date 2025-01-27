@@ -121,17 +121,17 @@ cse.addEventListener("click", () => {
 function createCourseCard(filteredCourses) {
   document.querySelector(".container").innerHTML = "";
   filteredCourses.forEach(course => {
-    let card = document.createElement("button");
+    let card = document.createElement("div");
     let name = document.createElement("p");
 
     name.innerHTML = `${course.number} ${course.subject}`;
+    card.className = course.completed ? "completed" : "not-completed";
 
     card.appendChild(name);
 
     document.querySelector(".container").appendChild(card);
   });
 }
-
 
 /*
 const currentcredits = document.querySelector("#currentcredits");
