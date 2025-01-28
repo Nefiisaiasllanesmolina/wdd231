@@ -105,17 +105,27 @@ createCourseCard(courses);
 const all = document.querySelector("#all");
 const wdd = document.querySelector("#wdd");
 const cse = document.querySelector("#cse");
+const currentcredits = document.querySelector("#currentcredits");
+
+const credits = 12;
+currentcredits.innerHTML = `The total number of credits show is: <span>${credits}</span>`;
 
 all.addEventListener("click", () => {
   createCourseCard(courses.filter(course => course.certificate.includes("Web")));
+  const credits = 12;
+  currentcredits.innerHTML = `The total number of credits show is: <span>${credits}</span>`;
 });
 
 wdd.addEventListener("click", () => {
   createCourseCard(courses.filter(course => course.subject.includes("WDD")));
+  const credits = 6;
+  currentcredits.innerHTML = `The total number of credits show is: <span>${credits}</span>`;
 });
 
 cse.addEventListener("click", () => {
   createCourseCard(courses.filter(course => course.subject.includes("CSE")));
+  const credits = 6;
+  currentcredits.innerHTML = `The total number of credits show is: <span>${credits}</span>`;
 });
 
 function createCourseCard(filteredCourses) {
@@ -123,6 +133,7 @@ function createCourseCard(filteredCourses) {
   filteredCourses.forEach(course => {
     let card = document.createElement("div");
     let name = document.createElement("p");
+    let credits = 0;
 
     name.innerHTML = `${course.number} ${course.subject}`;
     card.className = course.completed ? "completed" : "not-completed";
@@ -152,8 +163,3 @@ function reduce(filteredCourses) {
   });
 }
 */
-
-const currentcredits = document.querySelector("#currentcredits");
-
-const credits = 12;
-currentcredits.innerHTML = `The total number of credits show is: <span>${credits}</span>`;
