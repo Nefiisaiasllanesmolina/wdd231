@@ -143,23 +143,3 @@ function createCourseCard(filteredCourses) {
     document.querySelector(".container").appendChild(card);
   });
 }
-
-/*
-const currentcredits = document.querySelector("#currentcredits");
-
-wdd.addEventListener("click", () => {
-  reduce(courses.filter(course => course.subject.includes("WDD")));
-});
-
-cse.addEventListener("click", () => {
-  reduce(courses.filter(course => course.subject.includes("CSE")));
-});
-
-function reduce(filteredCourses) {
-  filteredCourses.forEach(course => {
-    document.querySelector(".credits").innerHTML = "";
-    const credits = 12;
-    currentcredits.innerHTML = `The total number of credits show is: <span>${credits}</span>`;
-  });
-}
-*/
