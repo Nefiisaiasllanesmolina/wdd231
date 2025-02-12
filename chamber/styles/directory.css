@@ -35,8 +35,7 @@
   }
   
   .footer{
-    display: block;
-    margin: auto;
+    align-items: center;
   }
 
   .sociallinks{
@@ -59,6 +58,6 @@
     footer{
       display: flex;
       flex-direction: column;
-      padding: 1.5rem 3rem;
+      padding: 1.5rem 1rem;
     }
   }
