@@ -51,6 +51,7 @@
 
   .sociallinks img{
     width: 50px;
+    gap: 1rem;
   }
   
   @media(max-width:760px){ 
