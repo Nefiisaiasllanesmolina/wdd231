@@ -40,9 +40,8 @@
   }
 
   .sociallinks{
-    text-align: center;
-    margin: auto;
     display: block;
+    margin: auto;
   }
 
   .sociallinks a{
@@ -51,7 +50,6 @@
 
   .sociallinks img{
     width: 50px;
-    gap: 1rem;
   }
   
   @media(max-width:760px){ 
