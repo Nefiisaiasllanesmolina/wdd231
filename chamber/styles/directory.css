@@ -106,7 +106,81 @@
   
 #icon-menu.open::before {
   content: "\f00d";
-} 
+}
+
+.list-grid-icons {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.list-grid-icons i {
+  padding: 10px;
+  font-size: 25px;
+  color: white;
+}
+
+.list-grid-icons button {
+  border: none;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.list-grid-icons i:hover {
+  color: var(--primary-color);
+}
+
+.list-grid-icons button:hover {
+  border: var(--primary-color) solid .5px;
+  background-color: white;
+  transition: .5s ease;
+
+}
+
+
+/* Grrid and List view styling  */
+#comp-list .table-list:nth-of-type(2),
+#comp-list .table-list:nth-of-type(4),
+#comp-list .table-list:nth-of-type(6) {
+  background-color: var(--secondary-color);
+}
+
+#comp-list {
+  display: none;
+}
+
+#comp-list {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#comp-grid {
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#comp-grid div {
+  text-align: center;
+  border: .5px solid var(--primary-color);
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 5px 5px var(--primary-color);
+}
+
+#comp-grid div h1 {
+  color: var(--primary-color);
+}
+
+.table-list {
+  /*class created in JS*/
+  display: grid;
+  grid: auto/1fr;
+  gap: 10px;
+  padding: 10px;
+  justify-content: space-evenly;
+}
     
 .sociallinks{
   margin-left: 0%;
