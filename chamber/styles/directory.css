@@ -47,8 +47,7 @@
   
   @media(max-width:900px){
     .sociallinks{
-      margin: auto;
-      display: block;
+      margin-left: 0%;
     }
 
     footer{
