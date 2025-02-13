@@ -18,7 +18,7 @@
   
   footer {
     display: grid;
-    grid-template-columns: 33.3% 33.4% 33.3%;
+    grid-template-columns: 33% 34% 33%;
     grid-gap: .2rem;
     background-color: var(--secondary-color);
     color: white;
@@ -41,8 +41,8 @@
   }
 
   .sociallinks i{
-    width: 40px;
-    font-size: 30px;
+    width: 30px;
+    font-size: 25px;
   }
   
   @media(max-width:760px){ 
