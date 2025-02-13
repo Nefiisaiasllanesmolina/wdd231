@@ -19,10 +19,10 @@
   footer {
     display: grid;
     grid-template-columns: 33% 34% 33%;
-    grid-gap: .2rem;
+    grid-gap: 1rem;
     background-color: var(--secondary-color);
     color: white;
-    padding: 3rem 4rem 8rem 4rem;
+    padding: 3rem 6rem 8rem 6rem;
     line-height: 1.5;
     align-items: center;
   }
@@ -41,8 +41,8 @@
   }
 
   .sociallinks i{
-    width: 30px;
-    font-size: 25px;
+    width: 35px;
+    font-size: 30px;
   }
   
   @media(max-width:900px){ 
