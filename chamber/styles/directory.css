@@ -51,6 +51,7 @@
       flex-direction: column;
       padding: 3rem 2rem 8rem 2rem;
       align-items: baseline;
+      grid-gap: .5rem;
     }
 
     .sociallinks i{
