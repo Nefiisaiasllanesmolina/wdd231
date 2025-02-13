@@ -15,7 +15,67 @@
     margin: 0;
     box-sizing: border-box;
   }
+
   
+
+  .nav-container,
+  .intro-msg-container,
+  .list-grid-icons,
+  #comp-grid,
+  #comp-list,
+  .footer-end,
+  .footer-container,
+  .footer-container {
+      margin: 0 auto;
+      max-width: 1200px;
+  }
+
+  .nav-container {
+    display: grid;
+    grid: auto/1fr auto;
+  }
+
+  .nav-container .nav-links {
+    display: flex;
+  }
+
+  #icon-menu {
+    display: none;
+  }
+
+  .nav-container .nav-links {
+    background-color: transparent;
+    /* grid-template-rows: 1fr; */
+  }
+
+  .nav-container .nav-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+
+  }
+
+  .nav-container .nav-links a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .nav-container .nav-links a.active {
+    color: var(--secondary-color);
+  }
+
+  .nav-container span img {
+    width: 180px;
+    height: auto;
+  }
+
+  
+
+
   footer {
     display: grid;
     grid-template-columns: 33% 34% 33%;
@@ -47,6 +107,96 @@
   }
   
   @media(max-width:900px){
+    .nav-container span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 13px;
+    }
+  
+    .nav-container span img {
+      width: 150px;
+      height: auto;
+    }
+  
+    .nav-container span a {
+      padding: 7px;
+  
+    }
+  
+    .nav-container .nav-links {
+      text-align: center;
+      background-color: var(--primary-color);
+    }
+  
+    .nav-container .nav-links a {
+      color: white;
+      padding: 8px 12px;
+      border-radius: 20px;
+    }
+  
+    .nav-container .nav-links a.active {
+      text-decoration: 2px white underline;
+    }
+  
+    .nav-container .nav-links ul li {
+      padding: 5px 0px;
+      margin: 13px 0;
+    }
+  
+  
+  
+    .nav-container .nav-links a:hover {
+      color: var(--primary-color);
+      background-color: var(--secondary-color);
+      transition: .5s ease;
+    }
+   
+  
+  
+  
+    /* Styling for the nav display */
+    /* .nav-links {
+      display: none;
+    }
+  
+    .nav-links.open {
+      display: block;
+  
+    } */
+  
+    .nav-container nav {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows .5s ease-out;
+    }
+  
+    .nav-container nav ul {
+      overflow: hidden;
+    }
+  
+    .nav-container nav.open {
+      grid-template-rows: 1fr;
+    }
+  
+    #icon-menu {
+      cursor: pointer;
+    }
+  
+  
+    #icon-menu::before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f0c9";
+      font-weight: 600;
+      font-size: 35px;
+    }
+  
+    #icon-menu.open::before {
+      content: "\f00d";
+    } 
+    
+
+
     .sociallinks{
       margin-left: 0%;
     }
