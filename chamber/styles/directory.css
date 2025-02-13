@@ -19,7 +19,7 @@
   footer {
     display: grid;
     grid-template-columns: 33% 34% 33%;
-    grid-gap: 2rem;
+    grid-gap: 0rem;
     background-color: var(--secondary-color);
     color: white;
     padding: 3rem 6rem 8rem 6rem;
@@ -33,6 +33,7 @@
   
   .footer{
     align-items: center;
+    padding-left: 4rem;
   }
 
   .sociallinks{
@@ -41,8 +42,8 @@
   }
 
   .sociallinks i{
-    width: 35px;
-    font-size: 30px;
+    width: 45px;
+    font-size: 40px;
   }
   
   @media(max-width:900px){
@@ -55,6 +56,12 @@
       flex-direction: column;
       padding: 3rem 2rem 8rem 2rem;
       align-items: baseline;
+      grid-gap: 2rem;
+    }
+
+    .footer{
+      align-items: center;
+      padding-left: 0rem;
     }
   }
 
