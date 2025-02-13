@@ -4,10 +4,10 @@
     --third-color: #70A288;
     --fourth-color: #DAB785;
     --fifth-color: #D5896F;
-  }
-  
-  body {
-    font-family: "Sansita" , sans-serif;
+
+    font-family: Outfit, "Humanst521 BT", roboto, sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
   }
   
   *{
@@ -16,17 +16,13 @@
     box-sizing: border-box;
   }
   
-  h1{
-    color: white;
-  }
-  
   footer {
     display: grid;
     grid-template-columns: 33.3% 33.4% 33.3%;
     grid-gap: 1rem;
     background-color: var(--secondary-color);
     color: white;
-    padding: 1.5rem 6rem;
+    padding: 3rem 6rem 8rem 6rem;
     line-height: 1.5;
     align-items: center;
   }
@@ -44,21 +40,20 @@
     display: block;
   }
 
-  .sociallinks a{
-    text-decoration: none;
-  }
-
-  .sociallinks img{
-    border: 2px solid black;
-    border-radius: 1.4rem;
-    background-color: white;
+  .sociallinks i{
     width: 50px;
+    font-size: 30px;
   }
   
   @media(max-width:760px){ 
     footer{
       display: flex;
       flex-direction: column;
-      padding: 1.5rem 1rem;
+      padding: 3rem 2rem 8rem 2rem;
+      align-items: baseline;
     }
   }
+
+
+
+  

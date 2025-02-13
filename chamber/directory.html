@@ -8,7 +8,8 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     
     <link rel="stylesheet" href="./styles/directory.css">
     <script src="scripts/directory.js" defer></script>
@@ -25,10 +26,44 @@
 <body>
     <header>
 
+        <section class="nav-container">
+            <span>
+                <a href="index.html"><img src="images/acc_logo.png" alt="Abuja Chambers of Commerce logo" width="180" height="72"></a>
+                <span id="icon-menu"> </span>
+            </span>
+
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </section>
+
     </header>
+
+
     <main>
+        <section class="intro-msg-container">
+            <p>Abuja Chambers of Commerce was established in 2024 with the vision to build a community where
+                businesses can thrive, foster a community of growth, and contribute to economic development.
+                <br> <br>
+                Find all members of the Abuja Chamber of Commerce below;
+            </p>
+        </section>
+
+        <div class="list-grid-icons">
+            <button id="grid-btn"> <i class="fa fa-th"></i> </button>
+            <button id="list-btn"> <i class="fas fa-list"></i> </button>
+        </div>
+
+        <section id="comp-grid"></section>
+        <section id="comp-list"></section>
 
     </main>
+
     <footer>
         <div class="info">
             <h3>Aldana Chamber of Commerce</h3>
@@ -38,17 +73,9 @@
             <p>(999) 433-1365</p>
         </div>
         <div class="sociallinks">
-            <nav>
-                <a href="https://www.facebook.com/people/Aldana-Fotograf%C3%ADa/61555920826234/">
-                    <img src="./images/facebook.webp" alt="Facebook">
-                </a>
-                <a href="#">
-                    <img src="./images/youtube.png" alt="youtube">
-                </a>
-                <a href="https://www.instagram.com/aldanaphotoandfilm/">
-                    <img src="./images/instagram.webp" alt="Instagram">
-                </a>
-            </nav>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
         </div>
         <div class="footer">
             <p>WDD231 Class Project</p>
