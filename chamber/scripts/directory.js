@@ -1,32 +1,3 @@
-const currentyear = document.querySelector("#currentyear");
-const lastModified = document.querySelector("#lastModified");
-
-const today = new Date();
-const year = today.getFullYear();
-
-currentyear.innerHTML = year;
-lastModified.innerHTML = `Last Modification: <span>${document.lastModified}</span>`;
-
-
-
-
-
-
-const navLinks = document.querySelector(".nav-links");
-const menuBtn = document.querySelector("#icon-menu");
-
-menuBtn.addEventListener("click", ()=> {
-    navLinks.classList.toggle("open");
-    menuBtn.classList.toggle("open");
-});
-
-
-
-
-
-
-
-
 const getCompanyGrid = document.querySelector("#comp-grid");
 const getCompanyList = document.querySelector("#comp-list");
 
