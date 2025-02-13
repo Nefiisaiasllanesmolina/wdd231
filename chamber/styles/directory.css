@@ -65,7 +65,7 @@
 }  
  
 .nav-container .nav-links a:hover {
-  color: var(--primary-color);
+  color: white;
   background-color: var(--secondary-color);
   transition: .5s ease;
 }
