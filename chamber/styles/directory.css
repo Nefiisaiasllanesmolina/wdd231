@@ -19,7 +19,7 @@
   footer {
     display: grid;
     grid-template-columns: 33.3% 33.4% 33.3%;
-    grid-gap: 1rem;
+    grid-gap: .5rem;
     background-color: var(--secondary-color);
     color: white;
     padding: 3rem 6rem 8rem 6rem;
@@ -51,7 +51,6 @@
       flex-direction: column;
       padding: 3rem 2rem 8rem 2rem;
       align-items: baseline;
-      grid-gap: .5rem;
     }
 
     .sociallinks i{
