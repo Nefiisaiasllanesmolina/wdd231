@@ -19,7 +19,7 @@
   footer {
     display: grid;
     grid-template-columns: 33% 34% 33%;
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     background-color: var(--secondary-color);
     color: white;
     padding: 3rem 6rem 8rem 6rem;
@@ -45,7 +45,12 @@
     font-size: 30px;
   }
   
-  @media(max-width:900px){ 
+  @media(max-width:900px){
+    .sociallinks{
+      margin: auto;
+      display: block;
+    }
+
     footer{
       display: flex;
       flex-direction: column;
