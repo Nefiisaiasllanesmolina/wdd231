@@ -41,7 +41,7 @@
   }
 
   .sociallinks i{
-    width: 40px;
+    width: 50px;
     font-size: 30px;
   }
   
@@ -51,6 +51,11 @@
       flex-direction: column;
       padding: 3rem 2rem 8rem 2rem;
       align-items: baseline;
+    }
+
+    .sociallinks i{
+      width: 32px;
+      font-size: 30px;
     }
   }
 
