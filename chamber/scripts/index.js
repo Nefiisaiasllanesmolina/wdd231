@@ -7,7 +7,7 @@ const key = "3738fab5185767035a362f0697836e31"
 const long = "-89.63114"
 const lat = "20.96584"
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}&units=metric`
-const url2 = `https://api.openweathermap.org/data/2.5/forecast?q=Abuja&appid=${key}&units=metric`
+const url2 = `https://api.openweathermap.org/data/2.5/forecast?q=Nefiisaiasllanesmolina&appid=${key}&units=metric`
  
 
 async function fetchAldanaData() {
