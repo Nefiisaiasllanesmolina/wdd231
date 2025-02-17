@@ -3,11 +3,11 @@ const weatherIcon = document.querySelector('#weather-icon');
 const weatherInfo = document.querySelector('.weather-info');
 const forecastInfo = document.querySelector('.forecastInfo');
 
-const key = "98e27fd141b7897cb676c334e0c8431a" 
+const myKey = "98e27fd141b7897cb676c334e0c8431a" 
 const long = "-89.63114"
 const lat = "20.96584"
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}&units=metric`
-const url2 = `https://api.openweathermap.org/data/2.5/forecast?q=Nefi&appid=${key}&units=metric`
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${myKey}&units=metric`
+const url2 = `https://api.openweathermap.org/data/2.5/forecast?q=Nefi&appid=${myKey}&units=metric`
  
 
 async function fetchAldanaData() {
