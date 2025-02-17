@@ -3,9 +3,9 @@ const weatherIcon = document.querySelector('#weather-icon');
 const weatherInfo = document.querySelector('.weather-info');
 const forecastInfo = document.querySelector('.forecastInfo');
 
-const key = "f8b61c6a8480f40134110dc75c051335" 
-const lat = "-89.63114"
-const long = "20.96584"
+const key = "3738fab5185767035a362f0697836e31" 
+const long = "-89.63114"
+const lat = "20.96584"
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}&units=metric`
 const url2 = `https://api.openweathermap.org/data/2.5/forecast?q=Abuja&appid=${key}&units=metric`
  
