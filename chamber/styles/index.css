@@ -121,3 +121,32 @@
 .companyInfo {
     padding: 10px 15px;
 }
+
+@media screen and (min-width: 1000px) {
+
+    #hero-container {
+        height: 600px;
+    }
+
+    .home {
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    #home-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        grid: 1fr/1.7fr 1fr 1fr;
+    }
+    
+    #companies-container {
+        grid: auto/1fr 1fr 1fr;
+    }
+    
+    #companies-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+}
