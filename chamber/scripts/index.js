@@ -12,8 +12,6 @@ const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lo
 const url2 = `https://api.openweathermap.org/data/2.5/forecast?q=Abuja&appid=${key}&units=metric`
  
 
- 
-
 async function fetchAldanaData() {
     try {
         const response = await fetch(url);
@@ -186,13 +184,6 @@ async function getMembers() {
 
             companiesContainer.appendChild(showCompanies);
         });
-        
-        
-
-
-
-
-        
     }
 
 }
