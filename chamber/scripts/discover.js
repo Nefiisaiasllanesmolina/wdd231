@@ -6,20 +6,17 @@ const monthYearElement = document.getElementById('month-year');
     let currentDate = new Date();
 
     function renderCalendar() {
-        // Clear previous calendar
+        
         daysElement.innerHTML = '';
 
-        // Set month and year in header
         const options = { month: 'long', year: 'numeric' };
         monthYearElement.textContent = currentDate.toLocaleDateString('en-US', options);
 
-        // Get first and last day of the month
         const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
         const lastDate = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
 
-        // Populate days
         for (let i = 0; i < firstDay; i++) {
-            daysElement.innerHTML += `<div></div>`; // Blank spaces before first day
+            daysElement.innerHTML += `<div></div>`;
         }
 
         for (let i = 1; i <= lastDate; i++) {
@@ -29,7 +26,7 @@ const monthYearElement = document.getElementById('month-year');
             if (i === new Date().getDate() && 
                 currentDate.getMonth() === new Date().getMonth() && 
                 currentDate.getFullYear() === new Date().getFullYear()) {
-                dayElement.classList.add('today'); // Highlight current day
+                dayElement.classList.add('today');
             }
             daysElement.appendChild(dayElement);
         }
@@ -46,7 +43,6 @@ const monthYearElement = document.getElementById('month-year');
         renderCalendar();
     });
 
-    // Initial render
     renderCalendar();
 
 const greetingMsg = document.getElementById('greeting-msg');
@@ -59,8 +55,8 @@ function displayGreeting() {
         greetingMsg.textContent = "Welcome! We are happy for your visit.";
 
     } else {
-        const timeDiff = currentVisit - parseInt(lastVisit); // the difference is the sum of the days between last and current visit
-        const daysDiff = Math.floor(timeDiff / aDayInMillseconds); // How many days difference 
+        const timeDiff = currentVisit - parseInt(lastVisit);
+        const daysDiff = Math.floor(timeDiff / aDayInMillseconds);
 
         if (timeDiff < aDayInMillseconds) {
             greetingMsg.textContent = "Back so soon!";
