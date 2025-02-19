@@ -125,6 +125,7 @@
 
 .companyInfo {
     padding: 10px 15px;
+    line-height: 1.5;
 }
 
 @media screen and (min-width: 1000px) {
