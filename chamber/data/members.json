@@ -69,6 +69,26 @@
             "membershipLevels": [
                 {"members": "⭐"}
             ]
+        },
+        {
+            "name": "Economotics Production",
+            "address": "Merida,Yucatan",
+            "phoneNumbers": "(+52) 999-432-1365",
+            "websitesUrls": "https://www.economotics.com",
+            "tagLine": "You have the control!",
+            "membershipLevels": [
+                {"members": "⭐"}
+            ]
+        },
+        {
+            "name": "Economotics Production",
+            "address": "Merida,Yucatan",
+            "phoneNumbers": "(+52) 999-432-1365",
+            "websitesUrls": "https://www.economotics.com",
+            "tagLine": "You have the control!",
+            "membershipLevels": [
+                {"members": "⭐"}
+            ]
         }
     ]
 }
