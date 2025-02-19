@@ -9,7 +9,6 @@ const lat = "20.96584"
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${myKey}&units=metric`
 const url2 = `https://api.openweathermap.org/data/2.5/forecast?q=Merida&appid=${myKey}&units=metric`
  
-
 async function fetchAldanaData() {
     try {
         const response = await fetch(url);
@@ -25,9 +24,6 @@ async function fetchAldanaData() {
     } catch (error) {
         console.log(error);
     };
-    
-    
-    
     
     function displayResults(data) {
         //weather icon
@@ -75,15 +71,6 @@ async function fetchAldanaData() {
 
 fetchAldanaData();
 
-
-
-
-
-
-
-
-
-
 async function getWeatherForecast() {
     try {
         const response = await fetch(url2);
@@ -118,9 +105,6 @@ async function getWeatherForecast() {
 }
 
 getWeatherForecast();
-
-
-
 
 //Dynamically display members in spotlight section
 const url3 = "data/members.json"
