@@ -16,8 +16,6 @@
     transition: 0.5s ease;
 }
 
-
-
 .att-1 {
     display: flex;
     flex-direction: column;
@@ -118,8 +116,6 @@
     }
 }
 
-
-
 .ptag p {
     padding: 10px;
 }
@@ -128,14 +124,6 @@
 .places {
     margin-top: 20px;
 }
-
-
-
-
-
-
-
-
 
 .calendar-header {
     padding: 13px;
