@@ -100,7 +100,7 @@
 .att-img-container .ptag:hover {
     visibility: visible;
     cursor: pointer;
-    background-color: rgb(42, 123, 72, 0.9);
+    background-color: var(--secondary-color);
     animation: upDown .6s ease;
 }
 
@@ -164,7 +164,7 @@
 
 
 .today {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 @media screen and (min-width: 1000px){
