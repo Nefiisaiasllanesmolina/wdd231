@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nefi Llanes | WDD 231">
+    <meta name="description" content="Aldana Chamber of Commerce.">
+
+    <meta property="og:title" content="Aldana Chamber of Commerce"/>
+    <meta property="og:description" content="Aldana Chamber of Commerce connecting businesses together">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nefiisaiasllanesmolina.github.io/wdd231/chamber/directory.html"/>
+    <meta property="og:image" content="https://nefiisaiasllanesmolina.github.io/wdd231/chamber/images/logo-black.png"/>
+    <meta name="twitter:card" content="Aldana Chamber of Commerce connects and grows businesses.">
+
+    <title>Discover | Aldana Chambers of Commerce </title>
+
+    <link rel="icon" type="image/png" href="./images/logo-black.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css" media="screen">
+    <link rel="stylesheet" href="styles/discover.css" media="screen">
+    <link rel="stylesheet" href="styles/directory.css" media="screen">
+    <link rel="stylesheet" href="styles/directory-large.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <script src="scripts/discover.js" defer></script>
+    <script src="scripts/lastmodified.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+</head>
+
+
+<body>
+
+    <header id="greeting-msg">
+    </header>
+
+    <header class="top-banner">
+
+        <nav class="items-left">
+            <ul>
+                <li> <i class="fa-brands fa-facebook"></i> </li>
+                <li> <i class="fa-brands fa-twitter"></i> </li>
+                <li> <i class="fa-brands fa-linkedin"></i> </li>
+                <li>
+                    <p>(+234) 817-362-0785</p>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="items-right">
+            <ul>
+                <li> <a href="#">Contact Us</a> </li>
+                <li> <a href="#">Privacy Policy</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <header>
+
+        <div class="nav-container">
+            <span>
+                <img src="images/acc_logo.png" alt="Abuja Chambers of Commerce logo" width="180" height="72">
+                <span id="icon-menu"> </span>
+            </span>
+
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    
+    <main>
+        <div id="discover-container">
+
+            <div class="att-1">
+                <div class="Events">
+                    <h1>Special Events</h1>
+                    <ul>
+                        <li>Business Diversity Conference | 24th November 2024, 4pm</li>
+                        <li>Business Excellence Award Event | 3rd December 2024, 2pm</li>
+                        <li>Professional Development Seminar | 16th December 2024, 1pm</li>
+                    </ul>
+
+                </div>
+
+                <div id="calendar-section">
+
+                    <div class="calendar-header">
+                        <button id="prev-month">&#9664;</button>
+                        <span id="month-year"></span>
+                        <button id="next-month">&#9654;</button>
+                    </div>
+
+                    <div class="calendar">
+                        <!-- Day names -->
+                        <div class="day-names">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div> 
+                            <div>Sat</div>
+                        </div>
+                        <!-- Days will be dynamically populated -->
+                        <div class="days" id="days"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="att-2">
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/National-Mosque-Abuja.jpg" alt="National Mosque Abuja" loading="lazy" width="1200" height="800">
+
+                        <div class="ptag">
+                            <p> <strong> Nigeria National Mosque </strong> <br>An impressive architectural structure that is one of the largest mosques in West Africa. Visitors can admire its beautiful design.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/Art-and-Craft-Village-Abuja.webp" alt="Arts and Craft Village Abuja" loading="lazy" width="800" height="445">
+                        <div class="ptag">
+                            <p><strong>Arts and Crafts Village </strong> <br> A vibrant market where you can find local crafts, artworks, and souvenirs. It's a great place to experience Nigerian culture.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="images/Jabi-Lake-Abuja.jpeg" alt="Jabi Lake Abuja" loading="lazy" width="602" height="510">
+                        <div class="ptag">
+                            <p> <strong> Jabi Lake</strong> <br> A scenic area for boating and picnicking. The lakefront has restaurants and cafes, making it a nice spot for leisure.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="https://aroundabuja.com/wp-content/uploads/2022/09/Dunes.jpg" alt="Dunes Centre Abuja" loading="lazy" width="1024" height="683">
+                        <div class="ptag">
+                            <p> <strong> Dunes Centre</strong> <br> A shopping mall that offers a mix of high-end stores, restaurants, and a pleasant atmosphere for visitors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="https://cdn.cfr.org/sites/default/files/styles/full_width_xl/public/image/2019/10/Nigeria-Ecumenical-Center-Abuja.jpg" alt="Nigerian National Church (Ecumenical Centre)" loading="lazy" width="1600" height="900">
+                        <div class="ptag">
+                            <p> <strong> Nigerian National Church (Ecumenical Centre):</strong> <br> A beautiful building representing various Christian denominations, known for its unique design and peaceful surroundings..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="places">
+                    <div class="att-img-container">
+                        <img src="https://th.bing.com/th/id/R.914c6dda99f9006e4ff80df0f5199fd6?rik=3jf1TP%2fK4xroJw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-I_QJgjOK4gE%2fT5_jRnI5uBI%2fAAAAAAAAEsc%2fNozPhQyd6ZY%2fs1600%2f524.jpg&ehk=T%2bKKgxPUJGjQLg27utlTDUsF1AqRmZRwpsKNtFUFERY%3d&risl=&pid=ImgRaw&r=0" alt="Nigerian National Church (Ecumenical Centre)" loading="lazy" width="1600" height="1197">
+                        <div class="ptag">
+                            <p> <strong> Nigerian National Mosque:</strong> <br> One of the largest mosques in Africa, it features stunning architecture and is open to visitors.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="info">
+            <h3>Aldana Chamber of Commerce</h3>
+            <p>Av. Yucatan</p>
+            <p>Merida, Yucatan</p>
+            <p>info@aldana.org</p>
+            <p>(999) 433-1365</p>
+        </div>
+        <div class="sociallinks">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="footer">
+            <p>WDD231 Class Project</p>
+            <p>Nefi Llanes</p>
+            <p>© <span id="currentyear"></span> Aldana Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
