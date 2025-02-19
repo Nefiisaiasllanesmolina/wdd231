@@ -49,10 +49,6 @@ const monthYearElement = document.getElementById('month-year');
     // Initial render
     renderCalendar();
 
-
-
-
-
 const greetingMsg = document.getElementById('greeting-msg');
 const aDayInMillseconds = 1000 * 60 * 60 * 24;
 const lastVisit = localStorage.getItem('lastVisit');
@@ -60,24 +56,23 @@ const currentVisit = new Date().getTime();
 
 function displayGreeting() {
     if(!lastVisit) {
-        greetingMsg.textContent = "Welcome! Let us know if you have any questions.";
+        greetingMsg.textContent = "Welcome! We are happy for your visit.";
 
     } else {
         const timeDiff = currentVisit - parseInt(lastVisit); // the difference is the sum of the days between last and current visit
         const daysDiff = Math.floor(timeDiff / aDayInMillseconds); // How many days difference 
 
         if (timeDiff < aDayInMillseconds) {
-            greetingMsg.textContent = "Back so soon! Awesome!";
+            greetingMsg.textContent = "Back so soon!";
 
         } else {
             const daysText = daysDiff === 1 ? 'day' : 'days';
             greetingMsg.textContent =  `You last visited ${daysDiff} ${daysText}`; 
         }
     }
-    // Update last visit date in localStorage
+
     localStorage.setItem('lastVisit', currentVisit);
 
-    // A timer to display the message for 1 minute
     setTimeout(() => {
         greetingMsg.classList.add('hidden');
 
