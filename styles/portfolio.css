@@ -47,6 +47,11 @@ h1{
   text-decoration: none;
 }
 
+.nav-link1{
+  color: black;
+  text-decoration: none;
+}
+
 .navbar{
   min-height: 70px;
   display: flex;
