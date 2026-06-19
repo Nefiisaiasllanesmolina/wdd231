@@ -26,6 +26,10 @@ h1{
   text-align: left;
 }
 
+.cardone li{
+  text-align: left;
+}
+
 .header{
   text-align: center;
   background-color: var(--secondary-color);
